@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flipkart Clone</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+
+    <!-- Bootstrap Files -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+    <!-- Header Section -->
+
+    <header class="bg_col med_01">
+        <div class="container ">
+            <div class="row">
+                <div class="col-lg-12 ">
+                    <nav class="navbar navbar-expand-lg navbar-light bg_col justify-content-center ">
+                        <img src="Gallery/flipkartlogo.png" class="logo me-3">
+
+                        <form class="form-inline search d-flex justify-content-between" action="">
+                            <input type="search" placeholder="Search for products, brands and more">
+                            <i class="fa-solid fa-magnifying-glass d-flex align-items-center"></i>
+                        </form>
+
+                        <ul class="navbar-nav ">
+                            <li class="nav-item login_btn mx-4 d-flex align-items-center">
+                                <a href="#" class="text-decoration-none bg-light">Login</a>
+                            </li>
+                            <li class="nav-item seller_more mx-3 d-flex align-items-center">
+                                <a href="#" class="text-decoration-none text-light">Become a Seller</a>
+                            </li>
+
+                            <li class="nav-item dropdown drop_btn seller_more mx-3">
+                                <a class="nav-link dropdown-toggle text-light" href="#" data-bs-toggle="dropdown">
+                                    More
+                                </a>
+                                <ul class="dropdown-menu mt-2">
+                                    <a class="dropdown-item" href="#">Notification Preferences</a>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <a class="dropdown-item" href="#">24*7 Customer Care</a>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <a class="dropdown-item" href="#">Advertise</a>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <a class="dropdown-item" href="#">Download App</a>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item d-flex align-items-center mx-4 cartbtn ">
+                                <i class="fa-solid fa-cart-shopping text-light"></i>
+                                <a href="#" class="text-decoration-none text-light">Cart</a>
+                            </li>
+
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- for menu of md & sm -->
+
+    <div class="container-fluid bg_col tm_01">
+        <div class="row">
+
+            <div class="col-md-12 d-flex align-items-center mt-2 pt-2">
+
+                <div class="col-md-2 log_cart_01">
+                    <i class="fa-solid fa-bars text-white"></i>
+                </div>
+
+                <div class="col-md-2 px-4">
+                    <img src="Gallery/flipkartlogo.png" class="tablogo d-flex justify-content-start align-items-center">
+                </div>
+
+                <div class="col-md-4 tm_b_pro">
+
+                </div>
+
+                <div class="col-md-4">
+                    <div class=" d-flex justify-content-end align-items-center log_cart">
+                        <i class="fa-solid fa-cart-shopping mx-4 text-white"></i>
+                        <a href="#">Login</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-lg-12">
+                <form class="form-inline search d-flex justify-content-between mt-3 mb-2" action="">
+                    <input type="search" placeholder="Search for products, brands and more">
+                    <i class="fa-solid fa-magnifying-glass d-flex align-items-center"></i>
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- <section class="cate"> -->
+    <div class="container-fluid cate  ">
+        <div class="row">
+            <div class="col-lg-12">
+                <ul class="nav pro_01 justify-content-center col-lg-12 col-md-12">
+
+                    <li class="nav-items ">
+                        <img src="Gallery/grocery.webp">
+                        <a href="" class="nav-link">Grocery</a>
+                    </li>
+
+                    <li class="nav-items">
+                        <img src="Gallery/Mobiles.webp">
+                        <a href="" class="nav-link">Mobile</a>
+                    </li>
+
+                    <li class="nav-items">
+                        <img src="Gallery/Fashion.webp">
+                        <a href="" class="nav-link">Fashion</a>
+                    </li>
+
+                    <li class="nav-items">
+                        <img src="Gallery/pc.webp">
+                        <a href="" class="nav-link">Electronics</a>
+                    </li>
+
+                    <li class="nav-items">
+                        <img src="Gallery/home.webp">
+                        <a href="" class="nav-link">Home & Furniture</a>
+                    </li>
+
+                    <li class="nav-items">
+                        <img src="Gallery/appliances.webp">
+                        <a href="" class="nav-link">appliances</a>
+                    </li>
+
+                    <li class="nav-items">
+                        <img src="Gallery/travel.webp">
+                        <a href="" class="nav-link">Travel</a>
+                    </li>
+
+                    <li class="nav-items">
+                        <img src="Gallery/toys.webp">
+                        <a href="" class="nav-link">Beauty, Toys & More </a>
+                    </li>
+
+                    <li class="nav-items">
+                        <img src="Gallery/two wheelers.webp">
+                        <a href="" class="nav-link">Two Wheelers</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Image Slider -->
+
+    <div class="container-fluid p-2">
+        <div class="row">
+            <div class="col">
+
+                <div id="carouselExample" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-interval="2000">
+                            <img src="Gallery/slide-4.webp" class="d-block w-100 tm_slide_img" style="height: 40vh;"
+                                alt="...">
+                        </div>
+                        <div class="carousel-item" data-interval="2000">
+                            <img src="Gallery/slide-2.webp" class="d-block w-100 tm_slide_img" style="height: 40vh;"
+                                alt="...">
+                        </div>
+                        <div class="carousel-item" data-interval="2000">
+                            <img src="Gallery/slide-3.webp" class="d-block w-100 tm_slide_img" style="height: 40vh;"
+                                alt="...">
+                        </div>
+                        <div class="carousel-item" data-interval="2000">
+                            <img src="Gallery/slide-1.webp" class="d-block w-100 tm_slide_img" style="height: 40vh;"
+                                alt="...">
+                        </div>
+                        <div class="carousel-item" data-interval="2000">
+                            <img src="Gallery/slide-5.webp" class="d-block w-100 tm_slide_img" style="height: 40vh;"
+                                alt="...">
+                        </div>
+
+                    </div>
+
+                    <a href="#carouselExample" class="carousel-control-prev" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+
+                    <a href="#carouselExample" class="carousel-control-next" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Product section for md or sm -->
+
+
+    <div class="container-fluid tm_01 p-2">
+        <div class="row">
+            
+            <div class="product_01 py-2">
+                <div class="card">
+                    <img src="Gallery/p-1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h1>Water Bottel</h1>
+                        <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <button type="button" class="btn btn-primary probtn">Buy Now</button>
+                    </div>
+                  </div>
+            </div>
+
+            <div class="product_01 py-2">
+                <div class="card">
+                    <img src="Gallery/p-10.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h1>Water Bottel</h1>
+                        <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <button type="button" class="btn btn-primary probtn">Buy Now</button>
+                    </div>
+                  </div>
+            </div>
+
+<div class="col-md-12 col-sm-12">
+    <div class="tabjrs">
+        <img src="Gallery/jsr.jpg">
+    </div>
+</div>
+
+            <div class="product_01 py-2">
+                <div class="card" >
+                    <img src="Gallery/p-11.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h1>Water Bottel</h1>
+                      <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <button type="button" class="btn btn-primary probtn">Buy Now</button>
+                    </div>
+                  </div>
+            </div>
+
+            <div class="product_01 py-2">
+                <div class="card" >
+                    <img src="Gallery/p-4.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h1>Water Bottel</h1>
+                      <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <button type="button" class="btn btn-primary probtn">Buy Now</button>
+                    </div>
+                  </div>
+            </div>
+
+            <div class="product_01 py-2">
+                <div class="card" >
+                    <img src="Gallery/p-5.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h1>Water Bottel</h1>
+                      <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <button type="button" class="btn btn-primary probtn">Buy Now</button>
+                    </div>
+                  </div>
+            </div>
+
+            <div class="product_01 py-2">
+                <div class="card" >
+                    <img src="Gallery/p-6.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h1>Water Bottel</h1>
+                      <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <button type="button" class="btn btn-primary probtn">Buy Now</button>
+                    </div>
+                  </div>
+            </div>
+
+
+            <div class="col-md-12 col-sm-12">
+                <div class="tabjrs">
+                    <img src="Gallery/side_img.webp">
+                </div>
+            </div>
+
+
+            <div class="product_01 py-2">
+                <div class="card" >
+                    <img src="Gallery/p-12.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h1>Water Bottel</h1>
+                      <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <button type="button" class="btn btn-primary probtn">Buy Now</button>
+                    </div>
+                  </div>
+            </div>
+
+            <div class="product_01 py-2">
+                <div class="card" >
+                    <img src="Gallery/p-9.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h1>Water Bottel</h1>
+                      <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <button type="button" class="btn btn-primary probtn">Buy Now</button>
+                    </div>
+                  </div>
+            </div>
+
+
+
+
+
+
+            
+
+            </div>
+        </div>
+
+
+
+
+
+
+
+        <!-- multislider 1 -->
+
+        <div class="container-fluid p-2 med_01" style="background-color: #F1F3F6; ">
+            <div class="row">
+                <div class="col-lg-2  ">
+
+                    <div class="lefti_01">
+                        <h1>Best Of Electronics</h1>
+                        <button type="button" class="btn btn-primary">VIEW ALL</button>
+                    </div>
+
+                </div>
+                <div class="col-lg-8 col-sm-8 bg-white">
+
+                    <!-- slider start -->
+                    <div class="text-center my-3">
+                        <div class="row mx-auto my-auto justify-content-center">
+                            <div id="recipeCarousel" class="carousel carousel_1 slide" data-bs-ride="carousel">
+                                <div class="carousel-inner" role="listbox">
+                                    <div class="carousel-item carousel-item_1 active">
+                                        <div class="col-md-3">
+                                            <div class="card">
+                                                <div class="card-img"> <img src="Gallery/p-1.jpg" class="img-fluid">
+                                                    <h4>Best of Product</h4>
+                                                    <h1>Price - $400</h1>
+                                                    <p>Buy Now</p>
+                                                </div>
+                                                <!-- <div class="card-img-overlay">Slide 1</div> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item carousel-item_1">
+                                        <div class="col-md-3">
+                                            <div class="card">
+                                                <div class="card-img"> <img src="Gallery/p-2.jpg" class="img-fluid">
+                                                    <h4>Best of Product</h4>
+                                                    <h1>Price - $400</h1>
+                                                    <p>Buy Now</p>
+                                                </div>
+                                                <!-- <div class="card-img-overlay">Slide 2</div> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item carousel-item_1">
+                                        <div class="col-md-3">
+                                            <div class="card">
+                                                <div class="card-img"> <img src="Gallery/p-3.jpg" class="img-fluid">
+                                                    <h4>Best of Product</h4>
+                                                    <h1>Price - $400</h1>
+                                                    <p>Buy Now</p>
+                                                </div>
+                                                <!-- <div class="card-img-overlay">Slide 3</div> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item carousel-item_1">
+                                        <div class="col-md-3">
+                                            <div class="card">
+                                                <div class="card-img"> <img src="Gallery/p-4.jpg" class="img-fluid">
+                                                    <h4>Best of Product</h4>
+                                                    <h1>Price - $400</h1>
+                                                    <p>Buy Now</p>
+                                                </div>
+                                                <!-- <div class="card-img-overlay">Slide 4</div> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item carousel-item_1">
+                                        <div class="col-md-3">
+                                            <div class="card">
+                                                <div class="card-img"> <img src="Gallery/p-5.jpg" class="img-fluid">
+                                                    <h4>Best of Product</h4>
+                                                    <h1>Price - $400</h1>
+                                                    <p>Buy Now</p>
+                                                </div>
+                                                <!-- <div class="card-img-overlay">Slide 5</div> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item carousel-item_1">
+                                        <div class="col-md-3">
+                                            <div class="card">
+                                                <div class="card-img"> <img src="Gallery/p-6.jpg" class="img-fluid">
+                                                    <h4>Best of Product</h4>
+                                                    <h1>Price - $400</h1>
+                                                    <p>Buy Now</p>
+                                                </div>
+                                                <!-- <div class="card-img-overlay">Slide 6</div> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> <a class="carousel-control-prev bg-transparent w-aut" href="#recipeCarousel"
+                                    role="button" data-bs-slide="prev"> <span class="carousel-control-prev-icon"
+                                        aria-hidden="true"></span> </a> <a
+                                    class="carousel-control-next bg-transparent w-aut" href="#recipeCarousel"
+                                    role="button" data-bs-slide="next"> <span class="carousel-control-next-icon"
+                                        aria-hidden="true"></span> </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- side img right -->
+
+                <div class="col-lg-2 col-sm-2">
+                    <div class="righti_01">
+                        <img src="Gallery/side_img.webp">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- multislider 2 -->
+
+
+        <div class="container-fluid p-2 med_01" style="background-color: #F1F3F6; ">
+            <div class="row">
+                <div class="col-lg-2">
+
+                    <div class="righti_01">
+                        <img src="Gallery/jsr.jpg">
+                    </div>
+
+                </div>
+
+                <div class="col-lg-10 bg-white">
+
+
+                    <div class="container text-center my-3">
+                        <div class="row mx-auto my-auto justify-content-center">
+                            <div id="recipeCarousel" class="carousel carousel_2 slide" data-bs-ride="carousel">
+                                <div class="carousel-inner" role="listbox">
+                                    <div class="carousel-item carousel-item_2 active">
+                                        <div class="col-md-3">
+                                            <div class="card">
+                                                <div class="card-img"> <img src="Gallery/p-7.jpg" class="img-fluid">
+                                                    <h4>Best of Product</h4>
+                                                    <h1>Price - $400</h1>
+                                                    <p>Buy Now</p>
+                                                </div>
+                                                <!-- <div class="card-img-overlay">Slide 1</div> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item carousel-item_2">
+                                        <div class="col-md-3">
+                                            <div class="card">
+                                                <div class="card-img"> <img src="Gallery/p-8.jpg" class="img-fluid">
+                                                    <h4>Best of Product</h4>
+                                                    <h1>Price - $400</h1>
+                                                    <p>Buy Now</p>
+                                                </div>
+                                                <!-- <div class="card-img-overlay">Slide 2</div> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item carousel-item_2">
+                                        <div class="col-md-3">
+                                            <div class="card">
+                                                <div class="card-img"> <img src="Gallery/p-9.jpg" class="img-fluid">
+                                                    <h4>Best of Product</h4>
+                                                    <h1>Price - $400</h1>
+                                                    <p>Buy Now</p>
+                                                </div>
+                                                <!-- <div class="card-img-overlay">Slide 3</div> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item carousel-item_2">
+                                        <div class="col-md-3">
+                                            <div class="card">
+                                                <div class="card-img"> <img src="Gallery/p-10.jpg" class="img-fluid">
+                                                    <h4>Best of Product</h4>
+                                                    <h1>Price - $400</h1>
+                                                    <p>Buy Now</p>
+                                                </div>
+                                                <!-- <div class="card-img-overlay">Slide 4</div> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item carousel-item_2">
+                                        <div class="col-md-3">
+                                            <div class="card">
+                                                <div class="card-img"> <img src="Gallery/p-11.jpg" class="img-fluid">
+                                                    <h4>Best of Product</h4>
+                                                    <h1>Price - $400</h1>
+                                                    <p>Buy Now</p>
+                                                </div>
+                                                <!-- <div class="card-img-overlay">Slide 5</div> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item carousel-item_2">
+                                        <div class="col-md-3">
+                                            <div class="card">
+                                                <div class="card-img"> <img src="Gallery/p-12.jpg" class="img-fluid">
+                                                    <h4>Best of Product</h4>
+                                                    <h1>Price - $400</h1>
+                                                    <p>Buy Now</p>
+                                                </div>
+                                                <!-- <div class="card-img-overlay">Slide 6</div> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> <a class="carousel-control-prev bg-transparent w-aut" href="#recipeCarousel"
+                                    role="button" data-bs-slide="prev"> <span class="carousel-control-prev-icon"
+                                        aria-hidden="true"></span> </a> <a
+                                    class="carousel-control-next bg-transparent w-aut" href="#recipeCarousel"
+                                    role="button" data-bs-slide="next"> <span class="carousel-control-next-icon"
+                                        aria-hidden="true"></span> </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Text Area -->
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 fliptextarea mt-4 px-4">
+                    <h1>Flipkart: The One-stop Shopping Destination</h1>
+                    <p>E-commerce is revolutionizing the way we all shop in India. Why do you want to hop from one store
+                        to
+                        another in search of the latest phone when you can find it on the Internet in a single click?
+                        Not
+                        only mobiles. Flipkart houses everything you can possibly imagine, from trending electronics
+                        like
+                        laptops, tablets, smartphones, and mobile accessories to in-vogue fashion staples like shoes,
+                        clothing and lifestyle accessories; from modern furniture like sofa sets, dining tables, and
+                        wardrobes to appliances that make your life easy like washing machines, TVs, ACs, mixer grinder
+                        juicers and other time-saving kitchen and small appliances; from home furnishings like cushion
+                        covers, mattresses and bedsheets to toys and musical instruments, we got them all covered. You
+                        name
+                        it, and you can stay assured about finding them all here. For those of you with erratic working
+                        hours, Flipkart is your best bet. Shop in your PJs, at night or in the wee hours of the morning.
+                        This e-commerce never shuts down.
+                        What's more, with our year-round shopping festivals and events, our prices are irresistible.
+                        We're
+                        sure you'll find yourself picking up more than what you had in mind. If you are wondering why
+                        you
+                        should shop from Flipkart when there are multiple options available to you, well, the below will
+                        answer your question.</p>
+                </div>
+                <br>
+                <br>
+                <div class="col-lg-12 fliptextarea mt-1 mb-2 px-4">
+                    <h1>Flipkart: The One-stop Shopping Destination</h1>
+                    <p>E-commerce is revolutionizing the way we all shop in India. Why do you want to hop from one store
+                        to
+                        another in search of the latest phone when you can find it on the Internet in a single click?
+                        Not
+                        only mobiles. Flipkart houses everything you can possibly imagine, from trending electronics
+                        like
+                        laptops, tablets, smartphones, and mobile accessories to in-vogue fashion staples like shoes,
+                        clothing and lifestyle accessories; from modern furniture like sofa sets, dining tables, and
+                        wardrobes to appliances that make your life easy like washing machines, TVs, ACs, mixer grinder
+                        juicers and other time-saving kitchen and small appliances; from home furnishings like cushion
+                        covers, mattresses and bedsheets to toys and musical instruments, we got them all covered. You
+                        name
+                        it, and you can stay assured about finding them all here. For those of you with erratic working
+                        hours, Flipkart is your best bet. Shop in your PJs, at night or in the wee hours of the morning.
+                        This e-commerce never shuts down.
+                        What's more, with our year-round shopping festivals and events, our prices are irresistible.
+                        We're
+                        sure you'll find yourself picking up more than what you had in mind. If you are wondering why
+                        you
+                        should shop from Flipkart when there are multiple options available to you, well, the below will
+                        answer your question.</p>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Footer Area -->
+
+        <div class="container-fluid footer">
+            <div class="row">
+
+                <div class="col-lg-2 px-4 pt-4">
+                    <ul class="footer_txt">
+                        <li class="footer_01 py-2">ABOUT</li>
+                        <li>Contact Us</li>
+                        <li>About Us</li>
+                        <li>Careers</li>
+                        <li>Flipkart Store</li>
+                        <li>Press</li>
+                        <li>Flipkart Wholesale</li>
+                        <li>Cleartrip</li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 pt-4">
+                    <ul class="footer_txt">
+                        <li class="footer_01 py-2">HELP</li>
+                        <li>Payments</li>
+                        <li>Shipping</li>
+                        <li>Cancellation & Returns</li>
+                        <li>FAQs</li>
+                        <li>Report Infringement</li>
+
+                    </ul>
+                </div>
+                <div class="col-lg-2 pt-4">
+                    <ul class="footer_txt">
+                        <li class="footer_01 py-2">CONSUMER POLICY</li>
+                        <li>Cancellation & Returns</li>
+                        <li>Terms of Use</li>
+                        <li>Security</li>
+                        <li>Privacy</li>
+                        <li>Sitemap</li>
+                        <li>Grievance Redressal</li>
+                        <li>EPR Compliance</li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 pt-4">
+                    <ul class="footer_txt">
+                        <li class="footer_01 py-2">SOCIAL</li>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Youtube</li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 pt-4">
+                    <ul class="footer_txt">
+                        <li class="footer_01 py-2">Mail Us:</li>
+                        <li>Flipkart Internet Private Limited,<br>
+                            Buildings Alyssa, Begonia &<br>
+                            Clove Embassy Tech Village,
+                            Outer Ring Road, Devarabeesanahalli Village,
+                            Bengaluru, 560103,<br>
+                            Karnataka, India</li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 pt-4 ">
+                    <ul class="footer_txt">
+                        <li class="footer_01 py-2">Registered Office Address:</li>
+                        <li>Flipkart Internet Private Limited,
+                            Buildings Alyssa, Begonia &
+                            Clove Embassy Tech Village,
+                            Outer Ring Road, Devarabeesanahalli Village,
+                            Bengaluru, 560103,
+                            Karnataka, India
+                            CIN : U51109KA2012PTC066107
+                            Telephone: 044-45614700</li>
+                    </ul>
+                </div>
+                <div class="py-1"></div>
+
+                <hr class="hr">
+
+                <div class="footer_02 d-flex ">
+                    <div class="col-lg-6 d-flex justify-content-center text-white">
+                        <p>© 2007-2023 Flipkart.com</p>
+                    </div>
+                    <div class="col-lg-6 d-flex justify-content-center">
+                        <img src="Gallery/R.png" class="footerpay">
+                        <img src="Gallery/R.png" class="footerpay med_01">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+
+</body>
+<!-- Bootstrap jS files -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+
+
+<!-- Java Script -->
+<script>
+    let items = document.querySelectorAll('.carousel_1  .carousel-item_1')
+
+    items.forEach((el) => {
+        const minPerSlide = 4
+        let next = el.nextElementSibling
+        for (var i = 1; i < minPerSlide; i++) {
+            if (!next) {
+                // wrap carousel by using first child
+                next = items[0]
+            }
+            let cloneChild = next.cloneNode(true)
+            el.appendChild(cloneChild.children[0])
+            next = next.nextElementSibling
+        }
+    })
+</script>
+
+<!-- second script -->
+<script>
+    let items_2 = document.querySelectorAll('.carousel_2  .carousel-item_2')
+
+    items_2.forEach((el) => {
+        const minPerSlide = 4
+        let next = el.nextElementSibling
+        for (var i = 1; i < minPerSlide; i++) {
+            if (!next) {
+                // wrap carousel by using first child
+                next = items_2[0]
+            }
+            let cloneChild = next.cloneNode(true)
+            el.appendChild(cloneChild.children[0])
+            next = next.nextElementSibling
+        }
+    })
+</script>
+
+
+</html>

@@ -1,0 +1,131 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/* For desktop */
+
+.med_01{
+    display: block;
+}
+
+.tm_01{
+    display: none;
+}
+
+
+
+
+
+/* For mobile */
+
+@media only screen and (max-width: 640px) {
+
+.med_01{
+        display: none;
+    }
+
+    .tm_01{
+        display: block;
+    }
+    
+
+
+/* header section*/
+
+.bg_col{
+    height: auto;
+}
+
+.tablogo{
+    height: 30px;
+    width: 60px;
+}
+
+.log_cart i{
+    font-size: 14px;
+}
+
+.log_cart_01{
+    font-size: 18px;
+}
+
+.log_cart a{
+    text-decoration: none;
+    color: white;
+}
+
+.tm_b_pro{
+    width: 100%;
+}
+
+.search{
+    box-shadow: none;
+}
+
+
+/* Cart Section */
+
+.tm_slide_img{
+    height: 30vh !important;
+}
+
+/* footer area second */
+
+.footerpay{
+    display: none;
+}
+
+
+/* Product section */
+
+.product_01{
+    width: 50% !important;
+}
+
+.card-img-top{
+    height: 40vh;
+    padding-top: 15px;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.card-body h1{
+    font-size: 16px;
+color: #010839;
+}
+
+.card-body p{
+    font-size: 14px;
+    color: green;
+}
+
+.probtn{
+    width: 100%;
+}
+
+.tabjrs img{
+    width: 100%;
+    height: 60vh;
+    
+}
+
+
+}
+
+
+
+@media only screen and (max-width: 500px) {
+
+.product_01{
+    width: 100% !important;
+} 
+
+.card-img-top{
+    height: 30vh;
+}
+
+}
+
